@@ -17,6 +17,8 @@ Tolerance is calculated as below,
 
 # calculate uniformity or tolerance
 
+Here we provide the pre-calculated feature embeddings from different temperature modalities. e.g., t0.1 indicates the model trained on normal contrastive loss and temperature is set to 0.1. t0.1a0.7 represents the model trained on ACL loss with temperature 0.1 and alpha 0.7.
+
 `` python uniformity.py/tolerance.py ``
 
 
