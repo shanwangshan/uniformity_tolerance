@@ -4,25 +4,25 @@ The uniformity and tolerance analysis are inspired from [here](https://openacces
 
 In order to analyze the reason why ACL loss brings improvement in performance. We analyze the feature embeddings from  uniformity and tolerance point of view with respect to different temperature.
 
-# Uniformity
+### Uniformity
 
 Uniformity is calculated as below,
 
 ![uniformity](uniformity.png)
-# Tolerance
+### Tolerance
 
 Tolerance is calculated as below,
 
 ![tolerance](tolerance.png)
 
-# calculate uniformity or tolerance
+### Calculate uniformity or tolerance
 
 Here we provide the pre-calculated feature embeddings from different temperature modalities. e.g., t0.1 indicates the model trained on normal contrastive loss and temperature is set to 0.1. t0.1a0.7 represents the model trained on ACL loss with temperature 0.1 and alpha 0.7.
 
 `` python uniformity.py/tolerance.py ``
 
 
-# Results
+### Results
 | temperature | uniformity (baseline) | uniformity (ACL) | tolerance | tolerance (ACL) | linear_probe (baseline) | linear_probe (ACL) |
 |-------------|-----------------------|------------------|-----------|-----------------|-------------------------|--------------------|
 | 0.1         | 0.3976                | 0.2447           | 0.9113    | 0.9471          | 77.081                  | 78.356             |
@@ -35,6 +35,10 @@ Here we provide the pre-calculated feature embeddings from different temperature
 | 0.8         | 0.3129                | 0.1512           | 0.9329    | 0.9684          | 74.126                  | 75.276             |
 | 0.9         | 0.2680                | 0.2052           | 0.9440    | 0.9595          | 72.930                  | 76.810             |
 | 1.0         | 0.3560                | 0.1530           | 0.9271    | 0.9676          | 71.329                  | 75.964             |
-# plot the figure
+### Plot the figure
 
 ``python plot.py``
+
+### Acknowledgement
+
+We wish to thank Wang et.al. for their detailed analysis on the contrastive loss ([link_here](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Understanding_the_Behaviour_of_Contrastive_Loss_CVPR_2021_paper.pdf)).
