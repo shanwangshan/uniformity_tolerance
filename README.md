@@ -4,8 +4,7 @@ The uniformity and tolerance analysis are inspired from [here](https://openacces
 
 In order to analyze the reason why ACL loss brings improvement in performance. We analyze the feature embeddings from  uniformity and tolerance point of view with respect to different temperature.
 
- The motivation of applying ACL is demonstrated [here](https://github.com/shanwangshan/problems_of_infonce), the Self-supervised ACL is implementated [here](https://github.com/shanwangshan/Self_supervised_ACL), and the supervised ACL is implementated [here](https://github.com/shanwangshan/supervised_ACL). For more details, please see from our paper *"Self-supervised learning of audio representations using angular contrastive loss"*.
-
+ The motivation of applying ACL is demonstrated [here](https://github.com/shanwangshan/problems_of_infonce), the Self-supervised ACL is implementated [here](https://github.com/shanwangshan/Self_supervised_ACL), and the supervised ACL is implementated [here](https://github.com/shanwangshan/supervised_ACL). For more details, please see from our paper [*"Self-supervised learningof audio representations using angular contrastive loss"*](https://arxiv.org/abs/2211.05442).
 
 ### Uniformity
 
